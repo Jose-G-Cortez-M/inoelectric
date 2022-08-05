@@ -7,120 +7,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilos.css">
   <title>INOELECTRIC</title>
-  <link rel="stylesheet" href="estilos.css">
   <!--Boostrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="sass/custom.css">
   <!--Fontawesome-->
   <script src="https://kit.fontawesome.com/6f84cf8917.js" crossorigin="anonymous"></script>
+  <!--animate-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-  <!--ENCABEZADO-->
-  <header class="container-fluid bg-info">
-    <div class="row d-flex justify-content-center align-items-md-center text-center">
-      <div class="col-lg-12">
-        <a class="navbar-brand" href="#">
-          <img src="./img/inolectric-encabezado.png" alt="" class="img-fluid w-50">
-        </a>
-      </div>
-      <div class="col-lg-4">
-        <form class="d-flex mx-auto" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+<!--ENCABEZADO-->
+<header class="container-fluid fondos">
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid row d-flex align-items-center justify-content-center">
+    <img src="img/logos/inolectric-encabezado_1000x300.png" alt="" class="d-inline-block col-sm-12 col-lg-6 w-25 animate__animated animate__lightSpeedInLeft">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse col-4" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-10">
+        <li class="nav-item">
+          <a class="nav-link active text-warning" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Servicios
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="servicios.html#inst-110">Instalaciones 110-V</a></li>
+            <li><a class="dropdown-item" href="servicios.html#inst-220">Instalaciones 220-V</a></li>
+            <li><a class="dropdown-item" href="servicios.html#inst-camaras">Instalación de cámaras</a></li>
+            <li><a class="dropdown-item" href="servicios.html#inst-garaje">Instalación de Motores para puertas de garaje</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="servicios.html#acometida">Acometidas</a></li>
+            <li><a class="dropdown-item" href="servicios.html#varilla">Varillas a tierra</a></li>
+            <li><a class="dropdown-item" href="servicios.html#cor-circuitos">Corrección de circuitos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="nosotros.html#">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Proyectos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="servicios.html#p-inst-220">Instalaciones 220-V</a></li>
+            <li><a class="dropdown-item" href="servicios.html#p-inst-110">Instalaciones 110-V</a></li>
+            <li><a class="dropdown-item" href="servicios.html#p-inst-camaras">Instalación de cámaras</a></li>
+            <li><a class="dropdown-item" href="servicios.html#p-inst-garaje">Instalación de Motores para puertas de garaje</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="servicios.html#p-acometida">Acometidas</a></li>
+            <li><a class="dropdown-item" href="servicios.html#p-varilla">Varillas a tierra</a></li>
+            <li><a class="dropdown-item" href="servicios.html#p-cor-circuitos">Corrección de circuitos</a></li>
+          </ul>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="productos.html">Productos</a>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-warning col-lg-2 animate__animated animate__lightSpeedInRight" style="color: #ffff; background-color: #114358;">Cotizar</button>
+
     </div>
-    <!--Menú de selección-->
-    <div class="row">
-      <div class="col-lg-12 d-md-flex align-items-center justify-content-center" style="border: 1px solid red;">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Inoelectric</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Toma corrientes
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">110 V</a></li>
-                    <li><a class="dropdown-item" href="#">220 V</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Luminarias
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Lámparas</a></li>
-                    <li><a class="dropdown-item" href="#">Candelabros</a></li>
-                    <li><a class="dropdown-item" href="#">boquillas</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Domótica
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Inslaciones</a></li>
-                    <li><a class="dropdown-item" href="#">Venta de equipos</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Protección y seguridad
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Varrilla a tierra</a></li>
-                    <li><a class="dropdown-item" href="#">Cámaras de vigilancia</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Otros servicios
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Acómetidas</a></li>
-                    <li><a class="dropdown-item" href="#">Duchas</a></li>
-                    <li><a class="dropdown-item" href="#">Motores para garaje</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
+</nav>
   </header>
+    
   <!--MAIN-->
-  <main class="container d-flex align-items-center justify-content-center" style="border: 1px solid red;">
+  <main class="container-fluid d-flex align-items-center justify-content-center mt-1">
     <!--Carousel-->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/redimencionado/ingeniero.png" class="d-block img-fluid" alt="...">
+          <img src="img/proyectos/lamparas_2.png" class="d-block img-fluid" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/redimencionado/descanso.png" class="d-block img-fluid" alt="...">
+          <img src="img/prediseñados/coffee_break.png" class="d-block img-fluid" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/redimencionado/construciones.png" class="d-block img-fluid" alt="...">
+          <img src="img/proyectos/tomas_1.png" class="d-block img-fluid" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/redimencionado/comprar.png" class="d-block img-fluid" alt="...">
+          <img src="img/prediseñados/ingeniero.png" class="d-block img-fluid" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -137,36 +105,37 @@
   </main>
 
   <!--Iconos de servicios-->
-  <div class="container" style="border: 1px solid blue;">
+  <div class="container">
+    <hr>
     <div class="row d-flex align-items-center justify-content-center">
       <div class="col-lg-2 col-sm-3 fa-3x">
         <a href="" style="text-decoration: none;">
-          <img src="./img/All_the_data.png" class="img-fluid" alt="">
+          <img src="./img/prediseñados/cotizaciones.png" class="img-fluid" alt="">
           <p class="h6 text-center text-dark">Cotización de proyectos</p>
         </a>
       </div>
       <div class="col-lg-2 col-sm-3 fa-3x">
-        <a href="" style="text-decoration: none;"><img src="./img/House_searching.png" class="img-fluid" alt="">
+        <a href="" style="text-decoration: none;"><img src="./img/prediseñados/House_searching.png" class="img-fluid" alt="">
           <p class="h6 text-center text-dark">Corrección de circuitos</p>
         </a>
       </div>
       <div class="col-lg-2 col-sm-3 fa-3x">
-        <a href="" style="text-decoration: none;"><img src="./img/under_construction.png" class="img-fluid" alt="">
+        <a href="" style="text-decoration: none;"><img src="./img/prediseñados/construciones.png" class="img-fluid" alt="">
           <p class="h6 text-center text-dark"> Instalaciónes nuevas</p>
         </a>
       </div>
       <div class="col-lg-2 col-sm-3 fa-3x">
-        <a href="" style="text-decoration: none;"><img src="./img/wishes.png" class="img-fluid" alt="">
+        <a href="" style="text-decoration: none;"><img src="./img/prediseñados/lamparas.png" class="img-fluid" alt="">
           <p class="h6 text-center text-dark"> Instalación de lámparas</p>
         </a>
       </div>
       <div class="col-lg-2 col-sm-3 fa-3x">
-        <a href="" style="text-decoration: none;"><img src="img/barbecue.png" class="img-fluid" alt="">
+        <a href="" style="text-decoration: none;"><img src="img/prediseñados/barbecue.png" class="img-fluid" alt="">
           <p class="h6 text-center text-dark">Instalación a 220V</p>
         </a>
       </div>
       <div class="col-lg-2 col-sm-3 fa-3x">
-        <a href="" style="text-decoration: none;"><img src="img/empty_cart.png" class="img-fluid" alt="">
+        <a href="" style="text-decoration: none;"><img src="img/prediseñados/empty_cart.png" class="img-fluid" alt="">
           <p class="h6 text-center text-dark">Productos de Domótica</p>
         </a>
       </div>
@@ -174,7 +143,7 @@
     <hr>
   </div>
   <!--Mejores productos-->
-  <div class="container" style="border: 1px solid red;">
+  <div class="container sombras mb-3">
     <div class="row">
       <div class="card mb-3">
         <div class="card-body">
@@ -183,15 +152,15 @@
             content. This content is a little bit longer.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
-        <img src="img/bobina-tesla.jpg" class="card-img-top" alt="...">
+        <img src="img/proyectos/domotica_uso.png" class="card-img-top" alt="...">
 
         <div class="card-body">
-          <h5 class="card-title">Los mejores productos</h5>
+          <h5 class="card-title">Los mejores servicios</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
             content. This content is a little bit longer.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
-        <img src="img/House_searching.png" class="card-img-top" alt="...">
+        <img src="img/proyectos/lamparas-uso.png" class="card-img-top" alt="...">
       </div>
 
     </div>
@@ -200,30 +169,30 @@
   <h1 class="container">Servicios</h1>
   <div class="container pb-4">
     <div class="row">
-      <div class="col-sm-6 col-md-4 pb-3 text-center">
+      <div class="col-sm-6 col-md-4 pb-3 text-center sombras">
         <div class="card">
           <div class="card-body">
-            <img src="img/bobina-tesla.jpg" class="card-img-top" alt="...">
+            <img src="img/proyectos/medidores.png" class="card-img-top" alt="...">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 pb-3 text-center">
+      <div class="col-sm-6 col-md-4 pb-3 text-center sombras">
         <div class="card">
           <div class="card-body">
-            <img src="img/bobina-tesla.jpg" class="card-img-top" alt="...">
+            <img src="img/proyectos/lamparas_2.png" class="card-img-top" alt="...">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-4 pb-3 text-center">
+      <div class="col-sm-12 col-md-4 pb-3 text-center sombras">
         <div class="card">
           <div class="card-body">
-            <img src="img/bobina-tesla.jpg" class="card-img-top" alt="...">
+            <img src="img/proyectos/tomas_2.png" class="card-img-top" alt="...">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -237,30 +206,30 @@
   <h1 class="container">Curiosidades</h1>
   <div class="container pb-4">
     <div class="row">
-      <div class="col-sm-6 col-md-4 pb-3 text-center">
+      <div class="col-sm-6 col-md-4 pb-3 text-center sombras">
         <div class="card">
           <div class="card-body">
-            <img src="img/bobina-tesla.jpg" class="card-img-top" alt="...">
+            <a href="#"><img src="img/proyectos/ener-eolica.png" class="card-img-top" alt="..."></a>
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 pb-3 text-center">
+      <div class="col-sm-6 col-md-4 pb-3 text-center sombras">
         <div class="card">
           <div class="card-body">
-            <img src="img/bobina-tesla.jpg" class="card-img-top" alt="...">
+            <img src="img/herramientas/herramientas.png" class="card-img-top" alt="...">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-4 pb-3 text-center">
+      <div class="col-sm-12 col-md-4 pb-3 text-center sombras">
         <div class="card">
           <div class="card-body">
-            <img src="img/bobina-tesla.jpg" class="card-img-top" alt="...">
+            <img src="img/proyectos/bobina-tesla.png" class="card-img-top" alt="...">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -270,13 +239,18 @@
     </div>
   </div>
   <!--FOOTER-->
-  <footer class="bg-info text-white" style="border:1px solid red;">
-    <div class="container">
+  <footer class="fondos_pie text-warning">
+    <div class="container-fluid">
       <nav class="row">
-        <!--LOGO-->
-        <a href="#" class="col-4 text-reset d-flex align-items-center text-decoration-none">
-          <img src="./img/logo.png" alt="Logo Inoelectric" class="img-logo mr-2 img-fluid">
-        </a>
+        <!--MENU 1-->
+        <ul class="col-3 list-unstyled">
+          <h2>Recursos</h2>
+          <li><a href="#" class="text-reset">Link 1</a></li>
+          <li><a href="#" class="text-reset">Link 2</a></li>
+          <li><a href="#" class="text-reset">Link 3</a></li>
+          <li><a href="#" class="text-reset">Link 4</a></li>
+          <li><a href="#" class="text-reset">Link 5</a></li>
+        </ul>
         <!--MENU 1-->
         <ul class="col-3 list-unstyled">
           <h2>Recursos</h2>
@@ -311,7 +285,8 @@
     <hr>
     <h2 class="d-flex align-items-center text justify-content-center">&copy, copyright@ 2022 JC </h2>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 
 </html>
