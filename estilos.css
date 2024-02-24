@@ -1,0 +1,27 @@
+.sombras{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.fondos{
+    background: #114358;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2aa1f, #114358);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(17, 67, 88,1)40%, rgba(242, 170, 31,.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #f2aa1f;
+}
+.fondos_pie{
+    background: #114358;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2aa1f, #114358);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(17, 67, 88, 0.781)40%, rgba(242, 172, 31, 0.562)),url('img/logos/logo_1000x600.png'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+.letras{
+    color: #f2aa1f;
+}
+.letras-pie{
+    color: #114358;
+}
+
